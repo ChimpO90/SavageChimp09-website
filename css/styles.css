@@ -1,4 +1,8 @@
 
+h3{
+	text-align: right;
+}
+
 body{
 	margin: 0;
 		font-family: Helvetica, Arial, sans-serif, serif;
@@ -42,6 +46,3 @@ footer{
 	
 }
 
-h3{
-	text-align: right;
-}
