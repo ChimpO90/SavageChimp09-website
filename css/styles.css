@@ -54,7 +54,10 @@ footer{
 
 /*second page*/
 
-h5 img{
+h5{
 	max-width: 800px;
+}
+
+h5 img{
 	max-width: 100%;
 }
