@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>My Circular Image Gallery</title>
+    <style>
+        /* Global styles */
+        body {
+            background-color: whitesmoke;
+            margin: 0;
+            padding: 20px;
+        }
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Body styles */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        .column {
+            flex: 0 0 calc(33.33% - 20px); /* Three columns with 20px margin between */
+            margin-right: 20px;
+        }
+
+        .column:last-child {
+            margin-right: 0; /* Remove margin from the last column in a row */
+        }
+
+        .circle {
+            width: 100%;
+            height: 0;
+            padding-bottom: 100%;
+            background-size: cover;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Image Gallery</h1>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="column">
+                <div class="circle" style="background-image: <img src="img/Minecraft battle.png">></div>
+            </div>
+            <div class="column">
+                <div class="circle" style="background-image: url('file:///D:/My%20Website/SavageChimp09-website/Minecraft battle.png');"></div>
+            </div>
+            <div class="column">
+                <div class="circle" style="background-image: url('image3.jpg');"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div class="circle" style="background-image: url('image4.jpg');"></div>
+            </div>
+            <div class="column">
+                <div class="circle" style="background-image: url('image5.jpg');"></div>
+            </div>
+            <div class="column">
+                <div class="circle" style="background-image: url('image6.jpg');"></div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 My Image Gallery</p>
+    </footer>
+</body>
+</html>
